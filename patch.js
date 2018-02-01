@@ -8,6 +8,7 @@ function chelseyPatch(x, y) {
  	fill(0,0,0);
   ellipse(x+150, y+150, 300, 300);
   
+  //ripple out effect
   var radius=0;
   	while (radius < 300) {
       colorMode(HSB); 
@@ -17,7 +18,8 @@ function chelseyPatch(x, y) {
  			 ellipse(x+150, y+150, radius);
       radius = radius + 25;
     }
-  
+ 
+ //ripple back in
  var radius2 = 270;
   while (radius2 > 0) {
     noFill();
