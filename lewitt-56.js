@@ -27,8 +27,15 @@ while (lines < 340) {
 }
 
 //diagonal lines with positive slope
-var lines = 0
-while (lines < 340) {
+var lines = 0;
+while (lines < 400) {
   line(lines, 170,lines-50,height);
   lines = lines + 10;
+}
+
+//diagonal lines with negative slope in bottom right quadrant
+var lines = 340;
+while (lines > 170);
+	line(lines, 170, lines + 50, height);
+	lines = lines - 10;
 }
